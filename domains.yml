@@ -1,0 +1,15 @@
+---
+- name: HR
+  domain_owner: Matthew
+- name: Sales and Marketing
+  domain_owner: Mark
+- name: Finance
+  domain_owner: Luke
+- name: Cloud Platform
+  domain_owner: Matthew
+- name: Office 365
+  domain_owner: Mark
+- name: ERP
+  domain_owner: Luke
+- name: Data
+  domain_owner: John
