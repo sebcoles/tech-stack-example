@@ -6,28 +6,34 @@ pool:
 
 steps:
 - task: PowerShell@2
+  displayName: "run setup scripts to install modules"
   inputs:
     filePath: 'scripts/setup.ps1'
     
 - task: PowerShell@2
+  displayName: "generate teams mermaid"
   inputs:
     filePath: 'scripts/teams.ps1'
 
 - task: PowerShell@2
+  displayName: "generate domains mermaid"
   inputs:
     filePath: 'scripts/domains.ps1'
 
 - task: PowerShell@2
+  displayName: "generate systems mermaid"
   inputs:
     filePath: 'scripts/systems.ps1'
 
 - task: CopyFiles@2
+  displayName: "copy files to artifact directory"
   inputs:
-    SourceFolder: '$(agent.builddirectory)'
+    SourceFolder: '$(Build.SourcesDirectory)'
     Contents: 'output/**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 - task: PublishBuildArtifacts@1
+  displayName: "publish artifacts"
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
