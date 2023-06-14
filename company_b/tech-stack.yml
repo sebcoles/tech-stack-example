@@ -1,0 +1,46 @@
+---
+- name: HR System
+  responsible_team: team_a
+  domain: HR
+  pushes_data_to:
+  pulls_data_from:
+- name: CRM
+  responsible_team: team_a
+  domain: Sales and Marketing
+  pushes_data_to:
+  pulls_data_from:
+- name: Data Ingestion
+  responsible_team: team_b
+  domain: Data
+  pushes_data_to:
+    - Power BI
+  pulls_data_from:
+    - CRM
+    - HR System
+    - Scheduling
+    - Billing
+- name: Scheduling
+  responsible_team: team_b
+  domain: ERP
+  pushes_data_to:
+  pulls_data_from:
+- name: Azure
+  responsible_team: team_d
+  domain: Cloud Platform
+  pushes_data_to:
+  pulls_data_from:
+- name: Outlook
+  responsible_team: team_g
+  domain: Office 365
+  pushes_data_to:
+  pulls_data_from:
+- name: Power BI
+  responsible_team: team_g
+  domain: Office 365
+  pushes_data_to:
+  pulls_data_from:
+- name: Billing
+  responsible_team:
+  domain: Finance
+  pushes_data_to:
+  pulls_data_from:

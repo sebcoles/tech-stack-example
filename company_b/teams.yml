@@ -1,0 +1,81 @@
+---
+- name: team_a
+  team_lead: mike
+  domain: HR
+  team_members:
+    - name: seb
+      email: seb@jam.com
+      role: developer
+    - name: dave
+      email: dave@jam.com
+      role: qa
+- name: team_b
+  team_lead: jason
+  domain: Sales and Marketing
+  team_members:
+    - name: seb
+      email: seb@jam.com
+      role: developer
+    - name: dave
+      email: dave@jam.com
+      role: qa
+- name: team_h
+  team_lead: jason b
+  domain: Data
+  team_members:
+    - name: seb c
+      email: seb@jam.com
+      role: developer
+    - name: dave g
+      email: dave@jam.com
+      role: qa
+- name: team_c
+  team_lead: jason
+  domain: Finance
+  team_members:
+    - name: seb
+      email: seb@jam.com
+      role: developer
+    - name: dave
+      email: dave@jam.com
+      role: qa
+- name: team_d
+  team_lead: jason b
+  domain: Cloud Platform
+  team_members:
+    - name: seb
+      email: seb@jam.com
+      role: developer
+    - name: dave
+      email: dave@jam.com
+      role: qa
+- name: team_e
+  team_lead: jason
+  domain: ERP
+  team_members:
+    - name: seb
+      email: seb@jam.com
+      role: developer
+    - name: dave
+      email: dave@jam.com
+      role: qa
+- name: team_f
+  team_lead: jason
+  domain: ERP
+  team_members:
+    - name: seb
+      email: seb@jam.com
+      role: developer
+    - name: dave
+      email: dave@jam.com
+      role: qa
+- name: team_g
+  team_lead: jason b
+  domain: Office 365
+  team_members:
+    - name: seb
+      email: seb@jam.com
+      role: developer
+    - name: dave
+      email: dave@jam.com
+      role: qa

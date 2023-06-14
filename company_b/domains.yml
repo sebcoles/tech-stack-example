@@ -1,0 +1,17 @@
+---
+- name: HR
+  domain_owner: Jane
+  pushes_data_to: Cloud Platform
+  pulls_data_from:
+- name: Sales and Marketing
+  domain_owner: Sarah
+  pushes_data_to: Cloud Platform
+  pulls_data_from:
+- name: Finance
+  domain_owner: Sofia
+  pushes_data_to: 
+  pulls_data_from: Cloud Platform
+- name: Cloud Platform
+  domain_owner: Claire
+  pushes_data_to:
+  pulls_data_from:
