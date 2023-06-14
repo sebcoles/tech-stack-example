@@ -41,7 +41,7 @@ if((Test-Path -Path $path) -eq $false){
   $mermaidString = $diagram | ConvertTo-MermaidString 
   
   # Generate HTML
-  $html = Get-Content .\template.html
+  $html = Get-Content "scripts/template.html"
   $replaced = $html.replace("#{replace}#", $mermaidString)
   $replaced | Out-File -FilePath "output/$($company)/domains_$(get-date -f yyyy-MM-dd).html"
 }
